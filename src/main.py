@@ -17,8 +17,10 @@ out_GuidedFilt = [];
 #for i in range(1,17,1):
 
 start_time = time.time()
-i = 15
-BF_out = cv2.bilateralFilter(img,i,35,35)
+sze = 15      # this is the size of the filter
+sigma_color = 35;
+sigma_space = 35;
+BF_out = cv2.bilateralFilter(img,sze,sigma_color,sigma_space)
 elapsed_time = time.time() - start_time
 out_BilateralFilt.append(elapsed_time)
 
@@ -27,7 +29,9 @@ cv2.imshow("BilateralFilt_out",BF_out)
 #cv2.imwrite(save_name,BF_out)
 
 start_time = time.time()
-GF_out = GuidedFilt(img,i)
+
+radius = 15;
+GF_out = GuidedFilt(img,radius)
 elapsed_time = time.time() - start_time
 out_GuidedFilt.append(elapsed_time)
 
