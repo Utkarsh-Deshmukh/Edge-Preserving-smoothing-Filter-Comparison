@@ -10,7 +10,7 @@ Inorder to reduce gaussian noise, we usually want to smooth the image. But we do
  The plot of "time required" vs "Kernel size" looks as follows:
 ![time_comparison](https://cloud.githubusercontent.com/assets/13918778/25735656/b5a0bbd0-3121-11e7-85db-fb79a3469a23.png)
 
-Here is a quality comparison between the two: (Note: you can get a better quality by playing around the sigma_space and sigma_color parameters in the bilateral filter and the "r" and "eps" parameter in guided filter)
+Here is a quality comparison between the two: (Note: you can get a better quality by playing around the sigma_space and sigma_color parameters in the bilateral filter and the "radius" and "eps" parameter in guided filter)
  
 ![graphics](https://cloud.githubusercontent.com/assets/13918778/25735611/8baad20c-3121-11e7-87d4-cd2b1ebc26eb.gif)
 
